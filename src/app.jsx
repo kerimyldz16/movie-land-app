@@ -4,7 +4,7 @@ import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard.jsx";
 
 export function App() {
-  const API_URL = "http://www.omdbapi.com?apikey=59c91800";
+  const API_URL = import.meta.env.VITE_API_URL;
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
